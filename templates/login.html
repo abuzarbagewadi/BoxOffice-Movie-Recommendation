@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body style="background-image: url(https://fandomwire.com/wp-content/uploads/2018/08/Movies-background.png);">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="https://www.clker.com/cliparts/x/S/v/B/t/e/thin-gray-login-button.svg" id="icon" alt="User Icon" />
+    </div>
+
+    <form method="POST" action="/login_validation">
+      <input type="text" id="login"  name="email" placeholder="Email">
+      <input type="password" id="password"  name="password" placeholder="Password">
+      <input type="submit" value="Login">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

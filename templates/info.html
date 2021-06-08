@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='rating.css')}}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <body style="background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/prism.png)">
+        <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/home">BoxOffice</a>
+          </div>
+          <ul class="nav navbar-nav">
+              <li><a>Recommended Movies</a></li>
+          </ul>
+      </div>
+        </nav>
+   
+        <div>
+            <p style="float: left;"><img src={{data.Poster}}></p>
+           <p style="color: azure;">Title: {{data.Title}}</p>
+           <p style="color: azure;"> Year: {{data.Year}}</p>
+           <p style="color: azure;"> Rated: {{data.Rated}}</p>
+           <p style="color: azure;"> Released: {{data.Released}}</p>
+           <p style="color: azure;"> Runtime: {{data.Runtime}}</p>
+           <p style="color: azure;"> Type: {{data.Type}}</p>
+            <p style="color: azure;">Genre: {{data.Genre}}</p>
+            <p style="color: azure;"> Director: {{data.Director}}</p>
+            <p style="color: azure;">Actors: {{data.Actors}}</p>
+            <p style="color: azure;"> Plot: {{data.Plot}}</p>
+            <p style="color: azure;"> IMDB Rating: {{data.imdbRating}}</p>
+            <p style="color: azure;"> Your Rating</p>
+            <form class="rating" method="POST" action="/rating">
+                <div>
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="2" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="3" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>   
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="4" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="5" />
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                  <span class="icon">★</span>
+                </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Rating</button>
+              </form>
+        </div>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="integrity=sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   </div>
+   </body>
+</html>
