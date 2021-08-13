@@ -11,3 +11,28 @@ The main goals of the BoxOffice Movie Recommendation and Critique System are:-
 8. They help the user find items of their interest 
 9. To identify the most relevant products for each user 
 10. Showcase personalized content to each user
+
+# Libraries used :
+❏	Flask
+❏	SQLAlchemy
+❏	Numpy
+❏	Pandas
+❏	Javascript
+
+
+# API used :
+❏ Open movie database (omdb) api
+ 
+# Dataset used:
+❏ Movie dataset from kaggle (.csv format)
+
+# Software versions used :
+❏	Python 3.8
+❏	iPython 7.8.0
+❏	HTML 5
+❏	Bootstrap 4.0
+❏	CSS 3
+❏	Git 2.24.1
+
+# Cloud Application Platform
+❏	Heroku
