@@ -1,5 +1,7 @@
 # BoxOffice-Movie-Recommendation
+This project aims to provide the registered user with personalized movie recommendations in accordance to the ratings they provide in addition to IMDB ratings and provides keyword based search feature.
 
+# Goals
 The main goals of the BoxOffice Movie Recommendation and Critique System are:-
 1. This system allows the user to rate the watched movies.
 2. To enable the user to recommend movies. 
